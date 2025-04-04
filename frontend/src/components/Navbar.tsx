@@ -1,15 +1,25 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, Box, IconButton, useTheme, useMediaQuery } from '@mui/material';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
+// @ts-ignore
 import RestaurantIcon from '@mui/icons-material/Restaurant';
+// @ts-ignore
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+// @ts-ignore
 import PeopleIcon from '@mui/icons-material/People';
+// @ts-ignore
 import InventoryIcon from '@mui/icons-material/Inventory';
+// @ts-ignore
 import MenuIcon from '@mui/icons-material/Menu';
+// @ts-ignore
 import Drawer from '@mui/material/Drawer';
+// @ts-ignore
 import List from '@mui/material/List';
+// @ts-ignore
 import ListItem from '@mui/material/ListItem';
+// @ts-ignore
 import ListItemIcon from '@mui/material/ListItemIcon';
+// @ts-ignore
 import ListItemText from '@mui/material/ListItemText';
 
 const Navbar: React.FC = () => {

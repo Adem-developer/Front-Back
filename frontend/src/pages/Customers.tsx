@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// @ts-ignore
 import {
   Box,
   Typography,
@@ -23,7 +24,9 @@ import {
   Avatar,
   LinearProgress,
 } from '@mui/material';
+// @ts-ignore
 import AddIcon from '@mui/icons-material/Add';
+// @ts-ignore
 import DeleteIcon from '@mui/icons-material/Delete';
 import axios from 'axios';
 
@@ -201,7 +204,6 @@ const Customers = () => {
                 <TableCell>Client</TableCell>
                 <TableCell>Contact</TableCell>
                 <TableCell align="right">Points de fidélité</TableCell>
-                {tabValue === 1 && <TableCell>Progression</TableCell>}
                 {tabValue === 0 && <TableCell>Actions</TableCell>}
               </TableRow>
             </TableHead>
@@ -260,25 +262,6 @@ const Customers = () => {
                       {customer.points_fidelite} pts
                     </Typography>
                   </TableCell>
-                  {tabValue === 1 && (
-                    <TableCell>
-                      <Box sx={{ width: '100%', maxWidth: 200 }}>
-                        <LinearProgress
-                          variant="determinate"
-                          value={(customer.points_fidelite / customers[0].points_fidelite) * 100}
-                          sx={{
-                            height: 8,
-                            borderRadius: 4,
-                            backgroundColor: 'rgba(0, 0, 0, 0.1)',
-                            '& .MuiLinearProgress-bar': {
-                              borderRadius: 4,
-                              backgroundColor: 'primary.main',
-                            },
-                          }}
-                        />
-                      </Box>
-                    </TableCell>
-                  )}
                   {tabValue === 0 && (
                     <TableCell>
                       <IconButton

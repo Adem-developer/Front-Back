@@ -23,6 +23,7 @@ import {
 } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
+// @ts-ignore
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import axios from 'axios';
 import AddIcon from '@mui/icons-material/Add';

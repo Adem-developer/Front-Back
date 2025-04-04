@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Grid, Paper, Typography, Box, CircularProgress, useTheme, Fade, Zoom } from '@mui/material';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import axios from 'axios';
+// @ts-ignore
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
+// @ts-ignore
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import Inventory2Icon from '@mui/icons-material/Inventory2';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';

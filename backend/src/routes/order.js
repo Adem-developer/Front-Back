@@ -5,15 +5,15 @@ const db = require("../db")
 
 /**
  * @swagger
- * /order/pending:
+ * /order/:
  *   get:
- *     summary: Récupérer les commandes en cours
- *     description: Récupère la liste des commandes dont le statut est "EN_COURS".
+ *     summary: Récupérer les commandes
+ *     description: Récupère la liste des commandes.
  *     tags:
  *       - Commandes
  *     responses:
  *       200:
- *         description: Liste des commandes en cours.
+ *         description: Liste des commandes.
  *         content:
  *           application/json:
  *             example:
